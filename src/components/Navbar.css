@@ -1,0 +1,95 @@
+header {
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  background-color: #fff;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, .7);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 45px;
+  text-shadow: rgb(0, 0, 0) 2px 0px 0px, rgb(0, 0, 0) 1.75517px 0.958851px 0px, rgb(0, 0, 0) 1.0806px 1.68294px 0px, rgb(0, 0, 0) 0.141474px 1.99499px 0px, rgb(0, 0, 0) -0.832294px 1.81859px 0px, rgb(0, 0, 0) -1.60229px 1.19694px 0px, rgb(0, 0, 0) -1.97999px 0.28224px 0px, rgb(0, 0, 0) -1.87291px -0.701566px 0px, rgb(0, 0, 0) -1.30729px -1.51361px 0px, rgb(0, 0, 0) -0.421592px -1.95506px 0px, rgb(0, 0, 0) 0.567324px -1.91785px 0px, rgb(0, 0, 0) 1.41734px -1.41108px 0px, rgb(0, 0, 0) 1.92034px -0.558831px 0px;
+  color: red;
+  cursor: pointer;
+  transition: .5s ease all;
+}
+.logo:hover {
+  color: pink;
+}
+.logo img {
+  height: 5rem;
+  margin-right: 10px;
+}
+.logo-header {
+  width: 5rem;
+  display: flex;
+}
+.navbar-default {
+  font-size: 25px;
+}
+.navbar-default ul {
+  display: flex;
+  list-style: none;
+}
+.navbar-default li {
+  margin-right: 15px;
+  padding: 7px 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.navbar-default li:hover {
+  color: red;
+  transition: .4s;
+}
+
+.bars {
+  display: none;
+  color: black;
+  
+}
+@media screen and (max-width: 1000px ) {
+  .bars {
+    display: flex;
+    padding-top: 5px;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: 0.5s all ease;
+  }
+  .bars:hover {
+    color: red;
+    transition: .4s;
+  }
+  .navbar-default {
+    display: none;
+  }
+  .navbar-active {
+    position: absolute;
+    left: 0;
+    top: 90px;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 70px);
+    align-items: center;
+    transition: 0.5s all ease;
+    background-color: #fff;
+    font-size: 25px;
+    
+  }
+  .navbar-active li {
+    padding-top: 50px;
+    border-bottom: 2px solid black;
+    list-style: none;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .navbar-active li:hover {
+    color: red;
+    transition: .4s;
+  }
+}
